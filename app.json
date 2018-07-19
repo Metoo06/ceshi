@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/user/user",
+    "pages/logs/logs",
+    "pages/content/content",
+    "pages/demo/demo",
+    "pages/cate/cate",
+    "pages/product/product"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ccc",
+    "navigationBarTitleText": "我的世界",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/591d11c3b2454.png",
+      "selectedIconPath":"images/591d11c3b24ac.png",
+      "text"    : "首页"
+    },{
+      "pagePath": "pages/cate/cate",
+      "iconPath": "images/591d11c3b2454.png",
+      "selectedIconPath": "images/591d11c3b24ac.png",
+      "text": "分类"
+    },{
+      "pagePath": "pages/demo/demo",
+      "iconPath": "images/591d11c3b2454.png",
+      "selectedIconPath": "images/591d11c3b24ac.png",
+      "text": "示例"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "iconPath": "images/591d11c3beb79.png",
+      "selectedIconPath": "images/591d11c3bebcc.png",
+      "text"    : "用户中心"
+    }],
+    "selectedColor": "#333",
+    "backgroundColor": "#fff",
+    "borderStyle": "#333",
+    "position" :"bottom"
+  }
+}
