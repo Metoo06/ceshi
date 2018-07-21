@@ -1,13 +1,40 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="user_info">
+  <view class="user_img"><image src="{{userInfo.avatarUrl}}" /></view>
+  <text>{{userInfo.nickName}}</text>
+</view>
+<view class="bg"></view>
+<view class="content">
+  <view class="balance">余额100元</view>
+  <view class='head_pay'>
+    <button>充值</button>
+    <button>提现</button>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="integral">
+    <text>当前积分<text>100</text></text>
+    <button>每日签到</button>
+  </view>
+  <view class="my-item">
+    <navigator url="../order/order">
+      <text>我的订单</text>
+      <image src="../../images/arrow-right.png" />  
+    </navigator>
+  </view>
+  <view class="my-item">
+    <navigator url="../../pages/index/index">
+      <text>我的收货地址</text>
+      <image src="../../images/arrow-right.png" />  
+    </navigator>
+  </view>
+  <view class="my-item">
+    <navigator url="../../pages/index/index">
+      <text>我的优惠券</text>
+      <image src="../../images/arrow-right.png" />  
+    </navigator>
+  </view>
+  <view class="my-item" bindtap="aboutUs">
+    <navigator url="../../pages/index/index">
+      <text>关于我们</text>
+      <image src="../../images/arrow-right.png" />  
+    </navigator>
   </view>
 </view>

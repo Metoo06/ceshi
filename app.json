@@ -4,9 +4,11 @@
     "pages/user/user",
     "pages/logs/logs",
     "pages/content/content",
-    "pages/demo/demo",
+    "pages/shop/shop",
     "pages/cate/cate",
-    "pages/product/product"
+    "pages/product/product",
+    "pages/order/order",
+    "pages/order/order_details"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -26,7 +28,7 @@
       "selectedIconPath": "images/591d11c3b24ac.png",
       "text": "分类"
     },{
-      "pagePath": "pages/demo/demo",
+      "pagePath": "pages/shop/shop",
       "iconPath": "images/591d11c3b2454.png",
       "selectedIconPath": "images/591d11c3b24ac.png",
       "text": "示例"
