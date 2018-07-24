@@ -20,13 +20,13 @@
     </navigator>
   </view>
   <view class="my-item">
-    <navigator url="../../pages/index/index">
+    <navigator url="../../pages/address/address">
       <text>我的收货地址</text>
       <image src="../../images/arrow-right.png" />  
     </navigator>
   </view>
   <view class="my-item">
-    <navigator url="../../pages/index/index">
+    <navigator url="../../pages/mycoupons/mycoupons">
       <text>我的优惠券</text>
       <image src="../../images/arrow-right.png" />  
     </navigator>

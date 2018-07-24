@@ -1,15 +1,25 @@
+//index.js
+//获取应用实例
+var app = getApp()
 Page({
-  data:{
-    selProvince:'请选择',
-    selCity:'请选择',
-    selDistrict:'请选择',
-    provinces: ['广东省', '北京市', '西藏'],
+  data: {
+    scrollTop: 0,
+    // 头部轮播图
+    imgUrls: [
+      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 3000,
+    duration: 1000,
   },
-  bindPickerChange: function(e){
-    var that = this;
-    that.setData({
-      selProvince: that.data.provinces[e.detail.value]
+  onPageScroll(e) {
+    let scrollTop = this.data.scrollTop
+    this.setData({
+      scrollTop: e.scrollTop
     })
-    console.log(that.data.provinces[e.detail.value])
+    console.log(e.scrollTop)
   }
 })

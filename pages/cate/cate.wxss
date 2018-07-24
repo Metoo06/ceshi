@@ -19,7 +19,7 @@
 }
 
 .tab-item.active {
-  color: #4675f9;
+  color: #e64340;
   position: relative;
 }
 
@@ -28,7 +28,7 @@
   display: block;
   height: 8rpx;
   width: 115rpx;
-  background: #4675f9;
+  background: #e64340;
   position: absolute;
   bottom: 0;
   left: 5rpx;
